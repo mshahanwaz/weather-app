@@ -75,7 +75,7 @@ function fillDataValues(data) {
 // Graph codes
 async function fetchAPI2(value) {
   await fetch(
-    `http://api.openweathermap.org/data/2.5/forecast?q=${value}&appid=6f9ea8fe08d6c9cb417d588ffe552258`
+    `https://api.openweathermap.org/data/2.5/forecast?q=${value}&appid=6f9ea8fe08d6c9cb417d588ffe552258`
   )
     .then((response) => response.json())
     .then((data) => {
