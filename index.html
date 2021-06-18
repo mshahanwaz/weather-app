@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body onload="onLoadFunc()">
+    <div class="weather">
+      <div class="weather__detail--wrapper">
+        <div class="weather__detail">
+          <div class="weather__detail--top">
+            <div class="weather__detail--city"></div>
+            <div class="weather__detail--toggle">
+              <i class="bi bi-toggle-off"></i>
+              <p>C</p>
+            </div>
+          </div>
+          <div class="weather__detail--center">
+            <div class="weather__detail--temp"><b></b>°<span>C</span></div>
+          </div>
+          <div class="weather__detail--bottom">
+            <div class="weather__detail--main">
+              <div class="weather__detail--mainTitle">Humidity</div>
+              <div class="weather__detail--mainData">
+                <div class="weather__detail--mainDataValue"></div>
+                <div class="weather__detail--mainDataUnit">%</div>
+              </div>
+            </div>
+            <div class="weather__detail--main">
+              <div class="weather__detail--mainTitle">Pressure</div>
+              <div class="weather__detail--mainData">
+                <div class="weather__detail--mainDataValue"></div>
+                <div class="weather__detail--mainDataUnit">hPa</div>
+              </div>
+            </div>
+            <div class="weather__detail--main">
+              <div class="weather__detail--mainTitle">Wind Speed</div>
+              <div class="weather__detail--mainData">
+                <div class="weather__detail--mainDataValue"></div>
+                <div class="weather__detail--mainDataUnit">m/s</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="weather__image">
+        <div class="weather__image--search">
+          <form>
+            <input type="text" placeholder="Search city" />
+            <button type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+        </div>
+        <div class="weather__image--github">
+          <a href="https://github.com/mshahanwaz/weather-app">
+            <i class="bi bi-github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
