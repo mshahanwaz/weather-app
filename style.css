@@ -17,7 +17,7 @@
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background: linear-gradient(to right, #002c41, rgb(0, 93, 105));
+  background: linear-gradient(to right, #002c41, #005d69);
 }
 
 .weather__detail--wrapper {
@@ -168,6 +168,17 @@
   color: white;
 }
 
+.weather__graph {
+  position: absolute;
+  top: 50%;
+  right: 8%;
+  transform: translateY(-50%);
+  border: 3px solid white;
+  padding: 10px;
+  background-color: #00000080;
+  border-radius: 10px;
+}
+
 @media screen and (max-width: 800px) {
   .weather {
     background: linear-gradient(to right, #002c41, rgb(0, 93, 105));
@@ -210,8 +221,14 @@
     font-size: 5rem;
     font-weight: 800;
   }
-  
+
   .weather__detail--temp span {
     font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .weather__graph {
+    display: none;
   }
 }
